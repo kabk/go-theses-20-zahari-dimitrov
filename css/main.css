@@ -15,7 +15,6 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.2;
-    
 }
 
 /*
@@ -103,12 +102,14 @@ textarea {
     right: 2.5px;
 }
 
+
+
 .loader{
     position: fixed;
     height: 100%;
     left: 0;
     right:0;
-    background:  url(../img/intro_gif.gif) no-repeat center center fixed; 
+    background: url(../img/intro_gif.gif) no-repeat center center fixed; 
   background-size: cover;
     
 }
