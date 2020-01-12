@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="loader"></div>
+<!--    <div class="loader"></div>-->
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">^</a><br><br><br><br>
@@ -44,9 +44,13 @@
 
 
     <div id="main">
+        
+        <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
 
 
-        <p id="title">Queering the Social Soup<p>
+        <p id="title">Queering<br>the<br>Social Soup<p>
 
                 <p id="info">Zahari Dimitrov<br>
                     KABK 2020<br>
@@ -73,14 +77,26 @@
 
 
                     <h2 id="abstract">Abstract</h2>
-                    <p data-aos="fade-right">Long-established rituals around food represent the current metabolic regime we &quot;live&quot; in. All of organic life was all spontaneously created from the alleged primordial soup, intrinsically linking everything through this chemical broth, yet something went awry, and humans strayed from the kindred. Through diversified examples of metabolic systems, I would like to evoke a rekindling with the entirety through ingestion, digestion and discharge.</p>
-                    <p data-aos="fade-left">A tracing of metabolic processes on a venture to queer our relationship with more-than-human beings through the lens of ingestion and rewrite the social contract between animate and inanimate beings. Treating the universe as a soup — parts of which through consumption we either assimilate or eject — in order to shift the mainstream perception of food rituals as generic survival mechanisms. Looking at food as much more than an energy source, it powers tentacular communication through its many forces and materialities.</p>
-                    <p data-aos="fade-right">I will look at examples of metabolic processes and ideology such as the primordial soup theory, termite mound functioning, cooking as the catalyzer of the nature / culture rift, comradeship, and going all the way to the microbe and fermentation. All aiming to bring about a new sense of how humans alter their surroundings by ways of interaction with active and passive forces.</p>
-                    <p data-aos="fade-left">Food is the medium of choice in this discourse as it is internalized through nearly all the senses. It creates a sensibility towards universal and local cycles where a dialogue may not seem legitimate. This dialogue is not represented in words, rather through a metabolic, spiritual gesture. The text works as an organism by mirroring the anthropic digestive tract and reflects upon the main action that goes on within each part.</p>
+                    <p>Long-established rituals around food represent the current metabolic regime we &quot;live&quot; in. All of organic life was all spontaneously created from the alleged primordial soup, intrinsically linking everything through this chemical broth, yet something went awry, and humans strayed from the <a class="footnote"><span>REFERENCE HERE</span>kindred</a>. Through diversified examples of metabolic systems, I would like to evoke a rekindling with the entirety through ingestion, digestion and discharge.</p>
+                    <p>A tracing of metabolic processes on a venture to queer our relationship with more-than-human beings through the lens of ingestion and rewrite the social contract between animate and inanimate beings. Treating the universe as a soup — parts of which through consumption we either assimilate or eject — in order to shift the mainstream perception of food rituals as generic survival mechanisms. Looking at food as much more than an energy source, it powers tentacular communication through its many forces and materialities.</p>
+                    <p>I will look at examples of metabolic processes and ideology such as the primordial soup theory, termite mound functioning, cooking as the catalyzer of the nature / culture rift, comradeship, and going all the way to the microbe and fermentation. All aiming to bring about a new sense of how humans alter their surroundings by ways of interaction with active and passive forces.</p>
+                    <p>Food is the medium of choice in this discourse as it is internalized through nearly all the senses. It creates a sensibility towards universal and local cycles where a dialogue may not seem legitimate. This dialogue is not represented in words, rather through a metabolic, spiritual gesture. The text works as an organism by mirroring the anthropic digestive tract and reflects upon the main action that goes on within each part.</p>
 
+
+<p id="quote" style="margin-left:1.0cm"><a class="footnote"><span>An interesting and informative comment appears here, as if by magic.</span>"From
+the Self (Brahman) sprang ether (akasa, that through
+which we hear); <br>
+from ether – air (that through which we hear and feel); <br>
+from air fire (that through which we hear, feel, and see); <br>
+from fire – water (that through which we hear, feel, see, and taste); <br>
+from water – earth (that through which we hear, feel, see, taste, and smell). <br>
+From earth – herbs, <br>
+from herbs – food, <br>
+from food – seed, <br>
+from seed – man. "</a><o:p></o:p></p>
                     
                     
-                    
+
                 </div>
     </div>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
@@ -88,14 +104,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <script>
-  AOS.init();
-</script>
+
+
 
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')

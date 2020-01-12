@@ -102,8 +102,6 @@ textarea {
     right: 2.5px;
 }
 
-
-
 .loader{
     position: fixed;
     height: 100%;
@@ -126,6 +124,8 @@ textarea {
     text-align: center;
     font-family: Lucida Console;
     line-height: 80px;
+    letter-spacing: -2.9px;
+    font-kerning: normal;
 /*    font-weight: 900;*/
 }
 
@@ -139,18 +139,41 @@ textarea {
     height: 700px;
     width: 95%;
 /*    left: -20px;*/
-    font-family: sans-serif;
+    font-family: HoeflerText-Regular, sans-serif;
+    font-kerning: normal;
     margin-left: 3px;
     font-size: 15px;
-    text-align: justify;
-    word-spacing: -2px;
+    text-align: left;
+    word-spacing: 0px;
+    margin-bottom: 20px;
 /*    margin-right: 20px;*/
 /*    margin-bottom: 100px;*/
 }
 
+#quote{
+    font-family: sans-serif;
+}
+
+.progress-container {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 5px;
+    
+  width: 98%;
+  height: 8px;
+  background: transparent;
+}
+
+.progress-bar {
+  height: 8px;
+  background: black;
+  width: 0%;
+    border-radius: 5px;
+}
+
 #index{
     position: fixed;
-    font-family: monospace;
+    font-family: CourierNewPSMT, monospace;
     font-size: 25px;
     padding-top: 5px;
     width: 100%;
@@ -203,6 +226,47 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 16%, rgba(255,252,0,1) 100
   font-size: 36px;
     padding-top: 15px;
 }
+
+a.footnote {
+    text-decoration: underline;
+/*
+   text-decoration:none;
+   background-color: #FEF6BB;
+   padding-left: 2px;
+   padding-right: 2px;
+   margin-right: 2px;
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+   -o-transition: all 2s ease;
+   transition: all 2s ease;
+*/
+} 
+
+a.footnote span {
+   z-index: -1;
+   opacity: 0;
+   position: fixed;
+   left: 15px; 
+   bottom: 20px;
+   margin-left: 0px;
+   margin-right: 18px;
+   padding:14px 20px;
+   border-radius:4px; box-shadow: 5px 5px 8px #CCC;
+   border:1px solid #DCA;
+   background-color: #FEF6BB;
+    font-family: sans-serif;
+}
+
+a.footnote:hover span {
+   z-index: 9;
+   opacity: 1;
+   -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+   -o-transition: all 2s ease;
+   transition: all 2s ease;
+}
+
+
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
