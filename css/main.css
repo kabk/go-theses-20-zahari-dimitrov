@@ -257,7 +257,7 @@ a.footnote span {
     font-family: sans-serif;
 }
 
-a.footnote:hover span {
+a.footnote:hover span, a.footnote:active span {
    z-index: 9;
    opacity: 1;
    -webkit-transition: all 2s ease;
