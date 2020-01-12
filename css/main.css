@@ -15,6 +15,10 @@ html {
     color: #222;
 /*    font-size: 1em;*/
     line-height: 1.2;
+/*
+    background-image: url(/img/lines.png);
+    background-size: 30%;
+*/
 }
 
 /*
@@ -161,6 +165,11 @@ textarea {
     font-family: Helvetica, sans-serif;
 }
 
+button {
+  all: unset;
+/* text-decoration: underline;*/
+    color: saddlebrown;
+}
 .progress-container {
     position: fixed;
     bottom: 0;
