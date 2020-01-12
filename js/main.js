@@ -21,3 +21,10 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+var bigfoot = $.bigfoot()
+
+        window.addEventListener('message', function (event) {
+            $('body').attr('data-footnote-style', event.data);
+            bigfoot.updateSetting('positionContent', event.data !== 'bottom');
+        });

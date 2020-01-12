@@ -16,8 +16,10 @@ html {
 /*    font-size: 1em;*/
     line-height: 1.2;
 /*
-    background-image: url(/img/lines.png);
-    background-size: 30%;
+    background-image: url(/img/sunset.png);
+    background-size: 380%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
 */
 }
 
@@ -130,22 +132,24 @@ textarea {
     line-height: 80px;
     letter-spacing: -2.9px;
     font-kerning: normal;
+    color: black;
 /*    padding-bottom: -3em;*/
     /*    font-weight: 900;*/
 }
 
 #info {
-    font-family: HoeflerText-Regular;
+    font-family: HelveticaNeue, HoeflerText-Regular;
     font-weight: 200;
     font-size: 20px;
     text-align: center;
+    color:  black;
 }
 
 .maintext {
     position: static;
     /*    height: 700px;*/
     width: 93%;
-    font-family: HoeflerText-Regular, sans-serif;
+    font-family: HelveticaNeue, HoeflerText-Regular, sans-serif;
     font-kerning: normal;
 /*    margin-right: 30px;*/
     font-size: 16.8px;
@@ -153,10 +157,11 @@ textarea {
     word-spacing: 0px;
     margin-bottom: 20px;
     margin-left: 15px;
+     color: black;
 }
 
 #abstract {
-    font-family: Helvetica;
+    font-family: Lucida Console;
     /*    font-weight: 600;*/
     font-size: 25px;
 }
@@ -188,15 +193,17 @@ button {
 
 #index {
     position: fixed;
-    font-family: CourierNewPSMT, monospace;
+    font-family: Optima-Regular, CourierNewPSMT, monospace;
     font-size: 25px;
     padding-top: 5px;
     width: 100%;
     left: 0;
     top: 0;
+/*    background-color: aliceblue;*/
     background: transparent;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 19%, rgba(255, 252, 0, 1) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 59%, rgba(255, 252, 0, 1) 100%);
     text-align: center;
+    color: black;
 }
 
 .sidenav {
@@ -243,53 +250,12 @@ button {
     padding-top: 15px;
 }
 
-a.footnote {
-    text-decoration: underline;
-    /*
-   text-decoration:none;
-   background-color: #FEF6BB;
-   padding-left: 2px;
-   padding-right: 2px;
-   margin-right: 2px;
-   -webkit-transition: all 2s ease;
-   -moz-transition: all 2s ease;
-   -o-transition: all 2s ease;
-   transition: all 2s ease;
-*/
-}
-
-a.footnote span {
-    z-index: -1;
-    opacity: 0;
-    position: fixed;
-    left: 15px;
-    bottom: 20px;
-    margin-left: 0px;
-    margin-right: 18px;
-    padding: 14px 20px;
-    border-radius: 4px;
-    box-shadow: 5px 5px 8px #CCC;
-    border: 1px solid #DCA;
-    background-color: #FEF6BB;
-    font-family: sans-serif;
-}
-
-a.footnote:hover span {
-    z-index: 9;
-    opacity: 1;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -o-transition: all 2s ease;
-    transition: all 2s ease;
-}
 
 
 
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    /*  padding: 20px;*/
-}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 /*
