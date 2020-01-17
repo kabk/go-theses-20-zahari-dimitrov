@@ -133,8 +133,6 @@ textarea {
     letter-spacing: -2.9px;
     font-kerning: normal;
     color: black;
-/*    padding-bottom: -3em;*/
-    /*    font-weight: 900;*/
 }
 
 #info {
@@ -147,22 +145,19 @@ textarea {
 
 .maintext {
     position: static;
-    /*    height: 700px;*/
     width: 93%;
     font-family: HelveticaNeue, HoeflerText-Regular, sans-serif;
     font-kerning: normal;
-/*    margin-right: 30px;*/
     font-size: 16.8px;
     text-align: left;
     word-spacing: 0px;
     margin-bottom: 20px;
     margin-left: 15px;
-     color: black;
+    color: black;
 }
 
 #abstract {
     font-family: Lucida Console;
-    /*    font-weight: 600;*/
     font-size: 25px;
 }
 
@@ -248,8 +243,11 @@ textarea {
 
 abbr[title] {
   text-decoration: unset;
-    color: blue;
+    color: rebeccapurple;
     text-decoration: underline;
+    font-family: Helvetica;
+    font-weight: 600;
+    
 }
 
 #tooltip
@@ -298,7 +296,53 @@ abbr[title] {
             margin: 0;
         }
 
+p {
+  margin-top: 0.7em ;
+  margin-bottom: 0.7em ;
+}
 
+
+.my-gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.my-gallery {
+  width: 100%;
+  width: 100%;
+    height: 150px;
+/*  float: left;*/
+    background-color: black;
+    display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+    overflow-y: hidden;
+}
+.my-gallery img {
+  width: 200px;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+/*  width: 150px;*/
+/*    overflow-x: scroll;*/
+}
+
+figcaption{
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    padding: 3px;
+}
+
+/*
+p{
+  margin:0;
+}
+p + p{
+  margin-top:10px;
+}
+*/
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 
