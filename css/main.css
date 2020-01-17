@@ -243,10 +243,10 @@ textarea {
 
 abbr[title] {
   text-decoration: unset;
-    color: rebeccapurple;
+/*    color: blue;*/
     text-decoration: underline;
-    font-family: Helvetica;
-    font-weight: 600;
+    text-decoration-style: wavy;
+    font-family: HelveticaNeue;
     
 }
 
