@@ -157,6 +157,7 @@ textarea {
     font-size: 20px;
     text-align: center;
     color:  black;
+    margin-bottom: 1.5em;
 }
 
 .maintext {
@@ -204,6 +205,12 @@ textarea {
   margin: 1rem 0;
     height: 100%;
     z-index: 1;
+}
+
+figcaption{
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    padding: 3px;
 }
 
  .progress-container {
@@ -356,39 +363,6 @@ p {
   margin-bottom: 0.7em ;
 }
 
-
-.my-gallery::-webkit-scrollbar{
-    display: none;
-}
-
-.my-gallery {
-  width: 100%;
-  width: 100%;
-    height: 150px;
-/*  float: left;*/
-    background-color: black;
-    display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-    overflow-y: hidden;
-}
-.my-gallery img {
-  width: 200px;
-  height: auto;
-}
-.my-gallery figure {
-  display: block;
-  float: left;
-  margin: 0 5px 5px 0;
-/*  width: 150px;*/
-/*    overflow-x: scroll;*/
-}
-
-figcaption{
-    font-family: HelveticaNeue;
-    font-size: 12px;
-    padding: 3px;
-}
 
 /*
 p{
