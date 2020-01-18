@@ -23,6 +23,16 @@ html {
 */
 }
 
+@font-face {
+  font-family: Life;
+  src: url(../fonts/Life.otf);
+}
+
+@font-face {
+  font-family: Bill;
+  src: url(../fonts/Bill.ttf);
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -128,11 +138,24 @@ textarea {
 #title {
     font-size: 90px;
     text-align: center;
-    font-family: Lucida Console;
+    font-family: 'Life';
     line-height: 80px;
     letter-spacing: -2.9px;
     font-kerning: normal;
     color: black;
+}
+
+#chapter_title{
+     font-size: 45px;
+    text-align: center;
+    font-family: 'Life';
+    line-height: 44px;
+    letter-spacing: -1.6px;
+    font-kerning: normal;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+/*    width: 70%;*/
 }
 
 #info {
@@ -157,22 +180,47 @@ textarea {
 }
 
 #abstract {
-    font-family: Lucida Console;
+    font-family: 'Life';
     font-size: 25px;
 }
 
 #quote {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Bill';
+    font-size: 18px;
 }
 
+/*
+#mySVG {
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 500px;
+  height: 500px;
+  margin-left: 0px;
+  pointer-events: none;
+  z-index: 999;
+}
+*/
+.siema img {
+/*  width: 100%;*/
+    object-fit: cover;
+    width:100%;
+}
 
-.progress-container {
+.siema {
+  margin: 1rem 0;
+    height: 100%;
+    z-index: 1;
+}
+
+ .progress-container {
     position: fixed;
     bottom: 0;
     margin-bottom: 5px;
     width: 98%;
     height: 8px;
     background: transparent;
+    z-index: 2;
 }
 
 .progress-bar {
@@ -184,7 +232,7 @@ textarea {
 
 #index {
     position: fixed;
-    font-family: Optima-Regular, CourierNewPSMT, monospace;
+    font-family: 'Bill';
     font-size: 25px;
     padding-top: 5px;
     width: 100%;
@@ -192,16 +240,17 @@ textarea {
     top: 0;
 /*    background-color: aliceblue;*/
     background: transparent;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 59%, rgba(255, 252, 0, 1) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 252, 0, 1) 100%);
     text-align: center;
     color: black;
+    z-index: 2;
 }
 
 .sidenav {
     height: 0;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background: rgb(255, 255, 255);
@@ -217,8 +266,8 @@ textarea {
 .sidenav a {
 
     text-decoration: none;
-    font-size: 18px;
-    font-family: monospace;
+    font-size: 25px;
+    font-family: 'Life';
     color: saddlebrown;
     display: block;
     transition: 0.3s;
@@ -253,12 +302,13 @@ abbr[title] {
 #tooltip
 {
     text-align: center;
-    color: #fff;
-    background: #111;
+    color: white;
+    background: black;
     position: absolute;
+    border-radius: 5px;
     z-index: 100;
-    padding: 15px;
-    font-family: HelveticaNeue;
+    padding: 10px;
+    font-family: 'Life';
 }
  
     #tooltip:after /* triangle decoration */
