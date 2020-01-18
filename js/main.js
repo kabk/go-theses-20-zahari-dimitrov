@@ -7,20 +7,7 @@ function closeNav() {
   document.getElementById("mySidenav").style.height = "0";
 }
 
-$(window).load(function() {
-		// Animate loader off screen
-		$(".loader").delay(10000).fadeTo("slow", 0);;
-	});
 
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}
 
 $( function()
 {
@@ -99,3 +86,37 @@ $( function()
     });
 });
 
+// Get the id of the <path> element and the length of <path>
+var heart = document.getElementById("heart");
+var length = heart.getTotalLength();
+
+// The start position of the drawing
+heart.style.strokeDasharray = length;
+
+// Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+heart.style.strokeDashoffset = length;
+
+// Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+window.addEventListener("scroll", myFunction);
+
+function myFunction() {
+var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  var draw = length * scrollpercent;
+
+  // Reverse the drawing (when scrolling upwards)
+  heart.style.strokeDashoffset = length - draw;
+}
+
+//
+////Code for Progress Bar 
+//
+//// When the user scrolls the page, execute myFunction 
+//window.onscroll = function() {myFunction()};
+//
+//function myFunction() {
+//  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+//  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+//  var scrolled = (winScroll / height) * 100;
+//  document.getElementById("myBar").style.width = scrolled + "%";
+//}
