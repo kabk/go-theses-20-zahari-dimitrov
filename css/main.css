@@ -33,6 +33,15 @@ html {
   src: url(../fonts/Bill.ttf);
 }
 
+@font-face {
+  font-family: ArialNarrow;
+  src: url(../fonts/ArialNarrow.ttf);
+}
+
+@font-face {
+  font-family: ArialNarrowBold;
+  src: url(../fonts/ArialNarrowBold.ttf);
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -144,6 +153,7 @@ textarea {
     letter-spacing: -1.6px;
     font-kerning: normal;
     color: black;
+    margin-top: 60px;
     padding-left: 10px;
     padding-right: 10px;
 /*    width: 70%;*/
@@ -171,6 +181,12 @@ textarea {
     margin-bottom: 20px;
     margin-left: 15px;
     color: black;
+    line-height: 20.3px;
+}
+
+#numbers{
+    font-family: 'Bill';
+    font-size: 22px;
 }
 
 #abstract {
@@ -180,21 +196,21 @@ textarea {
 
 #quote {
     font-family: 'Bill';
-    font-size: 18px;
+    font-size: 19px;
+    text-transform: lowercase;
+}
+#blockquote{
+    font-family: 'Bill';
+    font-size: 19px;
+    margin-left: 45px;
+    margin-right: 0px;
+    text-transform: lowercase;
 }
 
-/*
-#mySVG {
-  position: fixed;
-  top: 20%;
-  left: 35%;
-  width: 500px;
-  height: 500px;
-  margin-left: 0px;
-  pointer-events: none;
-  z-index: 999;
+#narrow{
+   font-family: 'ArialNarrowBold';
 }
-*/
+
 .siema img {
 /*  width: 100%;*/
     object-fit: cover;
@@ -213,22 +229,6 @@ figcaption{
     padding: 3px;
 }
 
- .progress-container {
-    position: fixed;
-    bottom: 0;
-    margin-bottom: 5px;
-    width: 98%;
-    height: 8px;
-    background: transparent;
-    z-index: 2;
-}
-
-.progress-bar {
-    height: 8px;
-    background: black;
-    width: 0%;
-    border-radius: 5px;
-}
 
 #mySVG {
   position: fixed;
@@ -238,7 +238,7 @@ figcaption{
   height: 100px;
   margin-left: 0px;
   pointer-events: none;
-  z-index: 999;
+  z-index: 2;
     bottom: 0;
 }
 
