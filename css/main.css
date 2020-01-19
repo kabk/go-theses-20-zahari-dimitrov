@@ -173,7 +173,7 @@ textarea {
 .maintext {
     position: static;
     width: 90%;
-    font-family: HelveticaNeue, HoeflerText-Regular, sans-serif;
+    font-family: 'Life', HelveticaNeue, HoeflerText-Regular, sans-serif;
     font-kerning: normal;
     font-size: 16.8px;
     text-align: left;
@@ -182,7 +182,7 @@ textarea {
     margin-left: 19px;
     color: black;
 /*    line-height: 25.3px;*/
-    line-height: 1.5em;
+    line-height: 1.4em;
 }
 
 #numbers{
