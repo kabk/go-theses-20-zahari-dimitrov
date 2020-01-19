@@ -130,6 +130,7 @@ textarea {
 
 #gol-wrapper{
     user-select: none;
+    pointer-events: none;
   width:150%;
   text-align: center;
   background-color: transparent;
@@ -141,6 +142,7 @@ textarea {
 #gol{
 /*  border:1px solid #888;*/
   /*width:100%;*/
+    pointer-events: none;
 }
 
 #title {
@@ -191,6 +193,7 @@ textarea {
     color: black;
 /*    line-height: 25.3px;*/
     line-height: 1.4em;
+    z-index: 3
 }
 
 #numbers{
@@ -246,7 +249,6 @@ p.climate{
 .siema {
   margin: 1rem 0;
     height: 100%;
-    z-index: 1;
 }
 
 figcaption{

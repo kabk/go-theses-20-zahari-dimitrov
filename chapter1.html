@@ -125,9 +125,22 @@ from seed – man.
             <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
             <script src="js/siema.min.js"></script>
+<!--
             <script>
                 new Siema();
             </script>
+-->
+<script>
+    const mySiema = new Siema({
+//  duration: 550,
+  loop: true,
+});
+
+    
+// listen for keydown event
+//setInterval(() => mySiema.next(), 3000)
+    </script>
+    
 
 
             <script>
