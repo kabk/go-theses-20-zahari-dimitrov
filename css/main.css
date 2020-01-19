@@ -172,16 +172,17 @@ textarea {
 
 .maintext {
     position: static;
-    width: 93%;
+    width: 90%;
     font-family: HelveticaNeue, HoeflerText-Regular, sans-serif;
     font-kerning: normal;
     font-size: 16.8px;
     text-align: left;
     word-spacing: 0px;
     margin-bottom: 20px;
-    margin-left: 15px;
+    margin-left: 19px;
     color: black;
-    line-height: 20.3px;
+/*    line-height: 25.3px;*/
+    line-height: 1.5em;
 }
 
 #numbers{
