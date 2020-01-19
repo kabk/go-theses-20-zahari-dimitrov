@@ -1,8 +1,8 @@
 var maxX = 500;
 var maxY = 500;
 var pop = 40000;
-var gridSize = 8;
-var size = 10;
+var gridSize = 5;
+var size = 4;
 var pieces = makeArray(maxY, maxX);
 var lastGeneration = null;
 

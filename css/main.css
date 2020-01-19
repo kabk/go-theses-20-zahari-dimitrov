@@ -134,7 +134,7 @@ textarea {
   background-color: transparent;
 /*  padding: 20px;*/
     position: fixed;
-    z-index: -3;
+    z-index: 0;
 }
 
 #gol{
@@ -221,10 +221,11 @@ textarea {
 
 p.climate img{
     mix-blend-mode: hard-light;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; 
 }
 
 p.climate{
-    background-color: mediumpurple;
+/*    background-color: mediumpurple;*/
 }
 
 .siema img {
