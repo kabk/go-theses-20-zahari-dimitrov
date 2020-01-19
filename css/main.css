@@ -129,6 +129,7 @@ textarea {
 
 
 #gol-wrapper{
+    user-select: none;
   width:150%;
   text-align: center;
   background-color: transparent;
@@ -180,7 +181,7 @@ textarea {
 .maintext {
     position: static;
     width: 90%;
-    font-family: 'Life', HelveticaNeue, HoeflerText-Regular, sans-serif;
+    font-family:  HelveticaNeue, HoeflerText-Regular, sans-serif;
     font-kerning: normal;
     font-size: 16.8px;
     text-align: left;
