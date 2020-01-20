@@ -133,7 +133,7 @@ textarea {
 #gol-wrapper{
     user-select: none;
     pointer-events: none;
-  width:100%;
+  width:80%;
   text-align: center;
   background-color: transparent;
 /*  padding: 20px;*/
