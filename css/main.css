@@ -122,8 +122,10 @@ textarea {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+/*
     left: 2.5px;
     right: 2.5px;
+*/
 }
 
 
