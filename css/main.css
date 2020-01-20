@@ -132,11 +132,11 @@ textarea {
     user-select: none;
     pointer-events: none;
   width:95%;
-  text-align: center;
+/*  text-align: center;*/
   background-color: transparent;
 /*  padding: 20px;*/
     position: absolute;
-    display:inline-block;
+/*    display:inline-block;*/
     z-index: 0;
 }
 
