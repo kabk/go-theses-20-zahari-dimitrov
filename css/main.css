@@ -135,8 +135,10 @@ textarea {
   text-align: center;
   background-color: transparent;
 /*  padding: 20px;*/
-    position: fixed;
+    position: absolute;
+    display:inline-block;
     z-index: 0;
+    
 }
 
 #gol{
