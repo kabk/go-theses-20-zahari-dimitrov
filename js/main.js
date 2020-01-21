@@ -125,5 +125,5 @@ $(document).ready(function () {
     // Handler for .ready() called.
     $('html, body').animate({
         scrollTop: $('.title').offset().top
-    }, 5000);
+    }, 9000);
 });
