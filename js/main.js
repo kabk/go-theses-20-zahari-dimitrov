@@ -120,3 +120,10 @@ var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTo
 //  var scrolled = (winScroll / height) * 100;
 //  document.getElementById("myBar").style.width = scrolled + "%";
 //}
+
+$(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('.title').offset().top
+    }, 5000);
+});
