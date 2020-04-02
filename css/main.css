@@ -185,7 +185,7 @@ textarea {
 .maintext {
     position: static;
     width: 90%;
-    font-family:  HelveticaNeue, HoeflerText-Regular, sans-serif;
+    font-family:  "Helvetica Neue", HelveticaNeue, sans-serif;
     font-kerning: normal;
     font-size: 16.8px;
     text-align: left;
