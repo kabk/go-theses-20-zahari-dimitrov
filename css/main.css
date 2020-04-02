@@ -264,6 +264,17 @@ figcaption{
   z-index: 2;
     bottom: 0;
 }
+.back{
+    text-decoration: none;
+    float: left;
+    padding-bottom: 30px;
+}
+
+.next{
+    text-decoration: none;
+    float: right;
+    padding-bottom: 30px;
+}
 
 
 #index {
