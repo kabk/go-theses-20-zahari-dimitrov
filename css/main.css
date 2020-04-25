@@ -22,6 +22,11 @@ html {
 */
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
 @font-face {
   font-family: Life;
   src: url(../fonts/Life.otf);
@@ -174,8 +179,8 @@ textarea {
 
 
 #info {
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 400;
+    font-family: HelveticaNeue, HoeflerText-Regular;
+    font-weight: 200;
     font-size: 20px;
     text-align: center;
     color:  black;
@@ -185,7 +190,7 @@ textarea {
 .maintext {
     position: static;
     width: 90%;
-    font-family:  "Helvetica Neue", HelveticaNeue, sans-serif;
+    font-family:  HelveticaNeue, HoeflerText-Regular, sans-serif;
     font-kerning: normal;
     font-size: 16.8px;
     text-align: left;
@@ -244,15 +249,6 @@ figcaption{
     padding: 2.5px;
 }
 
-.gif{
-    display: inline-block;
-    vertical-align:text-bottom;
-    width: 65px;
-/*    position: absolute;*/
-    left: 30%;
-/*    width: 500px;*/
-}
-
 #mySVG {
   position: fixed;
 /*  top: 20%;*/
@@ -264,18 +260,6 @@ figcaption{
   z-index: 2;
     bottom: 0;
 }
-.back{
-    text-decoration: none;
-    float: left;
-    padding-bottom: 30px;
-}
-
-.next{
-    text-decoration: none;
-    float: right;
-    padding-bottom: 30px;
-}
-
 
 #index {
     position: fixed;
@@ -507,26 +491,15 @@ p + p{
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (min-width: 900px) {
-    .images{
-        padding-top: 60px;
-        width: 50%;
-        margin: 0 auto;
-    }
-    .maintext{
-        width: 42%;
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 30px;
-    }
-    
-    #chapter_title{
-        width: 70%;
-        margin: 0 auto;
-        margin-top: 60px;
-        padding-bottom: 30px;
-    }
+
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
 }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
