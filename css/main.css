@@ -22,6 +22,10 @@ html {
 */
 }
 
+*::-webkit-scrollbar {
+    display: none;
+}
+
 @font-face {
   font-family: Life;
   src: url(../fonts/Life.otf);
